@@ -21,7 +21,7 @@ const dev_config = {
 // npm run build will switch to production keys....
 // for our staging hosted site we have to over ride the keys
 // local + prod will use .env keys...
-switch (window.location.hostName) {
+switch (window.location.hostname) {
 	case 'react-redux-firebase-1a6fd.firebaseapp.com':
 		firebase.initializeApp(dev_config);
 		break;
