@@ -1,14 +1,11 @@
 ## Playing around with react redux firebase
 
-### different dbs
+### different dbs / env
 
-1. create new project
+1. create new firebase project
 2. firebase user --add
 
-* example demo project w/ demo alais
+* follow steps add new alais
 
-3. when deploy to demo
-
-* firebase use demo && npm run build && firebase deploy
-
-##### i dont think the firebase.js initialize is used when hosted???
+3. create-react-app has built in .env -- when run build node_env switch to production -- uses .env.production file
+4. setup firebase intialize to use .env fire
