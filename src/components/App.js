@@ -13,10 +13,10 @@ class App extends Component {
 			<Router>
 				<div className="container">
 					<Header />
+					<Route exact path="/" component={PublicPosts} />
 					<Route exact path="/login" component={Login} />
 					<Route exact path="/Signup" component={Signup} />
 					<Route exact path="/posts" component={requireAuth(Posts)} />
-					<Route exact path="/" component={PublicPosts} />
 				</div>
 			</Router>
 		);

@@ -9,5 +9,25 @@ const config = {
 	messagingSenderId: process.env.REACT_APP_messagingSenderId
 };
 
-firebase.initializeApp(config);
+const dev_config = {
+	apiKey: 'AIzaSyBiRdEndmhnbkG3BXc1KhXAi1aUpJhSMzw',
+	authDomain: 'react-redux-firebase-1a6fd.firebaseapp.com',
+	databaseURL: 'https://react-redux-firebase-1a6fd.firebaseio.com',
+	projectId: ' react-redux-firebase-1a6fd',
+	storageBucket: ' react-redux-firebase-1a6fd.appspot.com',
+	messagingSenderId: ' 787039328305'
+};
+
+// npm run build will switch to production keys....
+// for our staging hosted site we have to over ride the keys
+// local + prod will use .env keys...
+switch (window.location.hostName) {
+	case 'react-redux-firebase-1a6fd.firebaseapp.com':
+		firebase.initializeApp(dev_config);
+		break;
+	default:
+		firebase.initializeApp(config);
+		break;
+}
+
 export default firebase;

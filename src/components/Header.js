@@ -39,7 +39,7 @@ class Header extends Component {
 			<nav>
 				<div className="nav-wrapper">
 					<Link className="brand-logo left" to="/">
-						Logo
+						firebase
 					</Link>
 
 					<ul id="nav-mobile" className="right">
