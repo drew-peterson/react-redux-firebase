@@ -13,9 +13,6 @@ class Header extends Component {
 		if (user) {
 			return [
 				<li key="0">{user.email}</li>,
-				<li key="3">
-					<Link to="/public-posts">Public Posts</Link>
-				</li>,
 				<li key="1">
 					<Link to="/posts">Posts</Link>
 				</li>,
@@ -28,9 +25,6 @@ class Header extends Component {
 		}
 
 		return [
-			<li key="1">
-				<Link to="/public-posts">Public Posts</Link>
-			</li>,
 			<li key="2">
 				<Link to="/login">Login</Link>
 			</li>,

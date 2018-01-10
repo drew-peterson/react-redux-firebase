@@ -21,6 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && firebase deploy"
+    "prod": "firebase use prod && npm run build && firebase deploy",
+    "demo": "firebase use staging && npm run build && firebase deploy"
   }
 }

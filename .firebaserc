@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "react-redux-firebase-1a6fd"
+    "prod": "react-redux-firebase-pro-73950",
+    "staging": "react-redux-firebase-1a6fd"
   }
 }

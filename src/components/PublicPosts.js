@@ -28,7 +28,7 @@ class PublicPosts extends Component {
 		return (
 			<ul className="collection with-header">
 				<li className="collection-header">
-					<h4>Public Posts</h4>
+					<h4>Public Posts prod</h4>
 				</li>
 				{this.renderPublicPosts()}
 			</ul>
